@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Base */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secções */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.skill p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.barra {
+    background-color: #ddd;
+    height: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nivel {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* Níveis */
+.html {
+    width: 85%;
+    background: linear-gradient(90deg, #e34c26, #ff7a59);
+}
+
+.css {
+    width: 75%;
+    background: linear-gradient(90deg, #264de4, #4f8cff);
+}
+
+.js {
+    width: 60%;
+    background: linear-gradient(90deg, #f0db4f, #f7e97f);
+}
+
+/* ---------- PROJETOS ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* ---------- FORM ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* ---------- DARK MODE ---------- */
+
+.dark {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark header,
+.dark footer {
+    background-color: #000;
+}
+
+.dark .card {
+    background-color: #1e1e1e;
+}
+
+.dark .barra {
+    background-color: #333;
+}
+
+.dark .skill p {
+    color: #ccc;
+}
