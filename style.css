@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #222;
+    background-color: #10af7f;
     padding: 15px;
 }
 
@@ -207,7 +207,7 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #222;
+    background-color: #058a7f;
     color: white;
     border: none;
     padding: 12px 15px;
@@ -230,3 +230,70 @@ footer {
     background-color: #fff;
     color: #000;
 }
+
+
+.projeto-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+}
+
+.projeto-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.projeto-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.projeto-imagem {
+  width: 100%;
+  max-width: 300px; /* ajusta conforme o tamanho que queres */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.ver-projeto {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.ver-projeto:hover {
+  color: #004999;
+}
+
+
+/* ---------- ZOOM NA IMAGEM DO PROJETO ---------- */
+
+.imagem-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: zoom-in;
+}
+
+.imagem-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.imagem-container:hover img {
+    transform: scale(1.2);
+}
+
+
